@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogMinimalista</title>
+    <link rel="shortcut icon" href="/assets/imagenes/dev.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap&text=homeblgwrkaut" rel="stylesheet"> 
+
+</head>
+
+<body>
+   <header>
+    <h1 class="TltPrincipal">EL BLOG DEL PROGRAMADOR
+        <img src="/assets/gifs/lengProg.gif" alt="gif-programacion" width="150px">
+    </h1>
+   
+    <nav  id="navigationBar">
+        <ul>
+            <li><a href="/">Home</a> </li>
+            
+            <li><a href="/templates/Noticias.html" target="_blank" >Noticias</a></li>
+            <li><a href="/templates/contacto.html" target="_blank">Contacto</a></li>
+        </ul>
+
+        
+    </nav>
+   </header>
+    
+    <main>
+
+        
+
+        <h2 id="sbttle">Bienvenido al desarrollo de software desktop, mobil & Web</h2>
+        
+        <section class="container-imagenes">
+            <picture>
+
+            <!-- se muestra cuando la pantalla mida 900px o mas -->
+            <source srcset="/assets/imagenes/img600+px.jpg" width="100%" media="(min-width:900px)" alt="imagen1">
+                <!-- img 700 - 899 -->
+            <source srcset="/assets/imagenes/img600+px.jpg" width="100%" media="(min-width:700px)" alt="imagen2">
+            <!-- img 500px a 699px -->
+            <source srcset="/assets/imagenes/img600+px.jpg" width="500px" media="(min-width:500px)" alt="imagen3">
+            <!-- img 300px a 499px-->
+                <source srcset="/assets/imagenes/default-600px.avif" media="(min-width:300px)" alt="imagen4">
+                <!-- default picture: por debajo 300px -->
+                <img src="/assets/imagenes/img-299px.jpg" alt="defaultimg"> 
+            </picture>
+
+        </section>
+
+        
+        
+        <h3 class="h3-1">Los mejores lenguajes de programacion</h3>
+        
+            <ol id="ol-lengp">
+                <li>Java</li>
+                <li>C#</li>
+                <li>Python</li>
+                <li>Java Script Vanilla</li>
+            </ol>
+       
+
+
+        <h3 class="h3-2">Herramientas de programacion web</h3>
+      
+            <p id="parrafo-1">Ser autodidacta es importante, pero existen herramientas como estas:</p>
+            <ul id="ul-sourcesp" >
+                
+                    <li>Libros de algoritmos</li>
+                    <li>Cursos de desarrollo</li>
+                    <li>Codigo de StackOverflow: <a id="link-sof" href="https://stackoverflow.com">Link</a></li>
+                    
+                         
+                
+                
+            </ul>
+        
+
+        
+    </main>
+
+    <!-- <aside>
+
+    </aside>
+
+    <article>
+
+    </article>
+
+    <section>
+
+    </section>
+
+    <div>
+
+    </div> -->
+
+    <footer>
+     <h3>Programacion web- by Juan Manuel Torres to Ing in TI</h3>
+    </footer>
+
+    <script src="/javascript/functions.js"></script>
+</body>
+
+</html>

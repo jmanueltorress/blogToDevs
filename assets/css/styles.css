@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu'); /*Fonts with Google API*/
+/*En css se asignan estilos mediante selectores; estiquetas nativas, class(.) and id(#)
+Estructure:
+----Add selector + keys{ + Propierties in layout container*/
+body{
+  max-width: 100%; /*Porcentaje maximo que ocupara el body de la pantalla*/
+  background-color: #FFF;/*Color de fondo*/
+}
+
+
+.TltPrincipal{
+  
+  
+  padding: 4% 1% 1% 1%;
+    font-family: 'Ubuntu', sans-serif; /*Font Family- Propiedad para signar tipografia al texto*/
+    font-size: 50px; /*Tamaño txt*/
+    color: rgb(0, 119, 255) ; /*color txt*/
+    display: flex; /*Tipo de estructura que llevara el display*/
+    justify-content:space-around;
+    width: auto;
+}
+picture{
+  width:100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-imagenes{
+  position: relative;
+  display: flex;
+  align-items: center; /*Alinear elementos de forma vertical-- also use: aligin-content*/
+  justify-content:space-around; /*Alinear elementos de forma Horizontal*/
+  /* up-right-low-left */
+  padding: 10% 2% 10% 2%;/*space out to in laterals margin*/
+  width: auto;/* ancho--- alto: is with hight*/
+  height: auto;
+  
+}
+
+
+
+.h3-1, .h3-2{ /*Asignar el mismo estilo a diferentes clases */
+  font-family: 'Ubuntu', sans-serif;
+  color: rgba(82, 82, 82, 0.89)
+}
+#sbttle{
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(30, 38, 153);
+  text-decoration: solid;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+#navigationBar{/*Caja padre-principal*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    color: rgb(6, 11, 4) ;
+    display: flex;
+    background: #1ec421;
+    border: 1px solid rgb(30, 38, 153);
+    list-style: none;
+    margin: 0;
+    padding: .3em;/*unidades de medida a textos: rem, em,px,%*/
+    text-decoration: none;
+    overflow: hidden;
+    align-content: center;
+    height: auto;
+
+}
+#navigationBar{/* estilos secundarios a box principal*/
+   background:rgb(30, 38, 153);
+    box-shadow:0px 1px 10px 10px rgb(255, 255, 255);
+    height:auto;
+    text-align:center;
+    width:97%;
+  }
+  #navigationBar > ul > li { /*estilos a etiqueta hijo de hijo de padte*/
+    display:inline-flex;
+  }
+  #navigationBar > ul > li > a /*estilos a etiqueta especifica dentro de etiqueta hijo-hijo-hijo*/
+  {
+    color:#FCD000;
+    display:inline-block;
+    height:40px;
+    line-height:40px;
+    margin:0px;
+    padding:0px 20px;
+    text-decoration:none;
+    transition: color 0.3s ease-in;
+  }
+  #navigationBar > ul > li > a:hover {
+    color:#FFF;
+  }
+  #ol-lengp{
+    color: rgb(57, 27, 226);
+    font-family: 'Ubuntu', sans-serif;
+  }
+  #ul-sourcesp{
+    color: rgb(2, 73, 179);
+    font-family: 'Ubuntu', sans-serif;
+    display: inline-block;
+  }
+  #parrafo-1{
+    color: rgba(82, 82, 82, 0.89);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+  }
+  #link-sof{
+    color: rgb(255, 128, 0);
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    padding: 0 20px 0 20px;
+    text-decoration: underline;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  #link-sof:hover{
+    color: rgb(64, 255, 0);
+    text-decoration:none;
+    /*offset-x | offset-y | blur-radius + color*/ /*--refractor: mover margen en vertical, mover margen en horizontal y opacidad-*/
+    text-shadow: 1px 1px 2px #FCD000;/*resaltado*/
+    border-style:inset;
+  }
+
+ 
+footer{
+  color: orange;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  text-align: center;
+}
+/* mediaqueries */
+  /* Por debajo de 600px */
+  @media screen and (max-width: 600px){
+
+    .TltPrincipal{
+
+        font-size:25px;
+
+    }
+    
+
+}
