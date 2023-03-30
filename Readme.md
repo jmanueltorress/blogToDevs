@@ -4,7 +4,7 @@
 ## Hello Devs!
 
 # Check this site in the next link
-## not host //
+##  host //     https://jmanueltorress.github.io/blogToDevs/
 
 
   "<p>Download repository with \ write in your terminal or bash:  
